@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+          <i class="bi bi-fingerprint h2"></i>
+          <span class="h3 text-dark">Tassie</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-dark" href="#">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-dark" href="#">Porfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-dark" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-dark">Contact</a>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-cart3 h2 m-2 text-dark"></i>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-person-circle h2 m-2 text-dark"></i>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- step3 page -->
+  <!-- personal details  -->
+  <main class="d-flex justify-content-center">
+    <div class="main-container h-100 bg-light mt-5 p-5">
+      <h1 class="h2">Shopping Cart</h1>
+      <div class="container d-flex align-items-center flex-column">
+        <div class="steps d-flex align-items-center">
+          <!-- step3 of 4steps -->
+          <span class="step rounded-circle bg-success text-white text-center mr-1">1</span>
+          <div class="progress" style="height: 10px; width: 150px;">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <span class="step rounded-circle bg-success text-white text-center mr-1 ml-1">2</span>
+          <div class="progress" style="height: 10px; width: 150px;">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <span class="step rounded-circle bg-success text-white text-center mr-1 ml-1">3</span>
+          <div class="progress" style="height: 10px; width: 150px;">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <span class="step border rounded-circle bg-white text-dark text-center mr-1 ml-1">4</span>
+        </div>
+        <div class="steps-description ">
+          <span class="mr-4">Confirm shopping list</span>
+          <span class="mr-5 ml-1">Payment and Delivery</span>
+          <span class="mr-4">Personal Details</span>
+          <span class="ml-5">Order Completed</span>
+        </div>
+      </div>
+      <hr/>
+      <!-- payment and delivery option page -->
+      <!-- payment section -->
+      <div class="container">
+        <h2 class="h3 text-secondary mt-2">Personal Details</h2>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input placeholder="John Minas" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Telephone</label>
+            <input placeholder="0912345678" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input placeholder="abc123@gmail.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Address</label>
+            <div class="postal d-flex">
+              <input placeholder="Suburb" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input placeholder="Postal" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <input placeholder="Address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+        </form>
+      <!-- total items -->
+      <div class="row d-flex justify-content-end mt-4">
+        <div class="col-2 text-muted">Quantity:</div>
+        <div class="col-2 d-flex justify-content-end h5">3</div>
+      </div>
+      <div class="row d-flex justify-content-end">
+        <div class="col-2 text-muted">Price:</div>
+        <div class="col-2 d-flex justify-content-end h5">$300</div>
+      </div>
+      <div class="row d-flex justify-content-end">
+        <div class="col-2 text-muted">Delivery Fee:</div>
+        <div class="col-2 d-flex justify-content-end h5">0</div>
+      </div>
+      <div class="row d-flex justify-content-end border-bottom">
+        <div class="col-2 text-muted">Total:</div>
+        <div class="col-2 d-flex justify-content-end h5 mb-4">$300</div>
+      </div>
+      <div class="row">
+        <!-- back to last step -->
+        <div class="col d-flex justify-content-start mt-4">
+         <a href="../shopping-page2/">
+          <button type="button" class="btn btn-white btn-lg border-primary text-primary">Back</button>
+        </a>
+        </div>
+        <!-- next btn -->
+        <div class="col d-flex justify-content-end mt-4">
+          <a href="../shopping-page4/">
+          <button type="button" class="btn btn-primary btn-lg">Next</button>
+          </a>
+        </div>
+      </div>
+  </main>
+
+<!-- footer section -->
+  <footer class="mt-5">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- logo occupies 4 for the 12 columns -->
+          <div class="col-lg-4 d-flex flex-column justify-content-center mb-5">
+            <div class="footer-logo text-center">
+              <i class="bi bi-fingerprint h2"></i>
+              <span class="h3 text-dark">Tassie</span>
+            </div>
+            <p class="text-center">Air plant banjo lyft occupy retro adaptogen indego</p>
+          </div>
+         <div class="col-lg-6">
+           <!-- links occupy 7 for the 12 columns on footer -->
+          <div class="row footer-links">
+            <div class="col-xl-3 col-lg-6 col-md-12 d-flex flex-column mb-5 text-center">
+              <h2 class="h6">CATEGORIES</h2>
+              <a href="#" class="text-dark text-decoration-none">First Link</a>
+              <a href="#" class="text-dark text-decoration-none">Second Link</a>
+              <a href="#" class="text-dark text-decoration-none">Third Link</a>
+              <a href="#" class="text-dark text-decoration-none">Fourth Link</a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 d-flex flex-column mb-5 text-center">
+              <h2 class="h6">CATEGORIES</h2>
+              <a href="#" class="text-dark text-decoration-none">First Link</a>
+              <a href="#" class="text-dark text-decoration-none">Second Link</a>
+              <a href="#" class="text-dark text-decoration-none">Third Link</a>
+              <a href="#" class="text-dark text-decoration-none">Fourth Link</a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 d-flex flex-column mb-5 text-center">
+              <h2 class="h6">CATEGORIES</h2>
+              <a href="#" class="text-dark text-decoration-none">First Link</a>
+              <a href="#" class="text-dark text-decoration-none">Second Link</a>
+              <a href="#" class="text-dark text-decoration-none">Third Link</a>
+              <a href="#" class="text-dark text-decoration-none">Fourth Link</a>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 d-flex flex-column mb-5 text-center">
+              <h2 class="h6">CATEGORIES</h2>
+              <a href="#" class="text-dark text-decoration-none">First Link</a>
+              <a href="#" class="text-dark text-decoration-none">Second Link</a>
+              <a href="#" class="text-dark text-decoration-none">Third Link</a>
+              <a href="#" class="text-dark text-decoration-none">Fourth Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- copyright items -->
+    <div class="container-fluid">
+      <div class="copyright row bg-light d-flex flex-wrap">
+        <div class="col-sm-12 col-md-6">© 2020 Tailblocks — @knyttneve</div>
+        <div class="col-sm-12 col-md-6 d-flex justify-content-lg-end ">
+          <!-- social media -->
+          <a href=""><i class="bi bi-facebook text-secondary mr-3"></i></a>
+          <a href=""><i class="bi bi-twitter text-secondary mr-3"></i></a>
+          <a href=""><i class="bi bi-instagram text-secondary"></i></a>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</html>
